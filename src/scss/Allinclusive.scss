@@ -1,0 +1,209 @@
+@import "./variables.scss";
+
+.allinclusive__container{
+  max-width: 1392px;
+  height: 856px;
+  background-color: $color-light;
+  padding-top: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  z-index: 0;
+}
+
+.allinclusive__container:after{
+  content: '';
+  background-image: url("../components/Allinclusive/img/right_vector.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  width: 312px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.allinclusive__container:before{
+  content: '';
+  background-image: url("../components/Allinclusive/img/left_vector.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  width: 454px;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.allinclusive__one-columns{
+  text-align: left;
+  margin-left: 116px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+
+  .allinclusive__one-columns-title{
+    color: $color-grey-dark;
+    display: flex;
+    align-items: baseline;
+    h2{
+      font-family: 'SangBleu Kingdom';
+      font-weight: 700;
+      font-size: 64px;
+      margin-right: 32px;
+    }
+    .prev-button{
+      text-decoration: none;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: $color-light-gold;
+      background-image: url("../components/Allinclusive/img/prev_arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 16px;
+    }
+    .next-button{
+      text-decoration: none;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: $color-light-gold;
+      background-image: url("../components/Allinclusive/img/next_arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .allinclusive__one-columns-content{
+    display: flex;
+    .allinclusive__one-columns-one-elem{
+      margin-right: 40px;
+      margin-top: 60px;
+    }
+    .allinclusive__one-columns-two-elem{
+      width: 260px;
+      font-family: 'Euclid Circular A', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      h3{
+        font-family: 'Euclid Circular B', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #999999;
+      }
+    }
+  }
+}
+
+.allinclusive__two-columns{
+  margin-left: 32px;
+  width: 276px;
+  height: 520px;
+  z-index: 10;
+  margin-top: 80px;
+  background-color: $color-white;
+  text-align: center;
+  border-radius: 8px;
+  padding-top: 8px;
+  .allinclusive__two-columns-content{
+    text-align: left;
+  }
+}
+
+.allinclusive__content{
+  text-align: left;
+  margin-bottom: 48px;
+  p {
+    font-family: 'Euclid Circular B', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+  }
+}
+.allinclusive__link-more{
+  text-decoration: none;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 24px;
+  margin: 24px;
+  color: $color-dark-gold;
+  cursor: pointer;
+  position: relative;
+}
+.allinclusive__link-more:after{
+  content: '';
+  background-color: $color-dark-gold;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  top: 4px;
+  margin-left: 8px;
+}
+.allinclusive__link-more:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 1440px){
+
+  .allinclusive__one-columns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+  }
+
+  .allinclusive__one-columns-title{
+    h2 {
+      font-family: 'SangBleu Kingdom';
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 24px;
+    }
+  }
+
+  .allinclusive__one-columns-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .allinclusive__one-columns-two-elem{
+    margin: 0;
+    h3{
+      display: none;
+    }
+    .sanitation{
+      display: none;
+    }
+  }
+  .allinclusive__two-columns{
+    background-color: transparent;
+    margin: 16px;
+  }
+
+  .allinclusive__container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 360px;
+    margin: 0;
+    img{
+      width: 328px;
+      height: 232px;
+    }
+  }
+
+  .allinclusive__container:before,
+  .allinclusive__container:after{
+    background-image: none;
+  }
+}

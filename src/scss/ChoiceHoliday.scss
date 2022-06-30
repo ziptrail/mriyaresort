@@ -1,0 +1,397 @@
+@import './variables.scss';
+
+.choice-holiday__wrapper{
+  margin: 0 0 96px 0;
+}
+.choice-holiday__form-container{
+  margin: 0 0 0 140px;
+}
+.choice-holiday__title{
+  font-family: 'SangBleu Kingdom';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 56px;
+  color: $color-grey-dark;
+  text-align: left;
+  h2{
+    margin-top: 0;
+  }
+}
+.choice-holiday__form{
+  width: 1160px;
+  height: 80px;
+  margin-top: 50px;
+  background-color: $color-light;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  .input__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 984px;
+  }
+  input{
+    border: 1px solid $color-borders;  padding-left: 10px;
+    cursor: pointer;
+  }
+  input:focus{
+    border: 1px solid $color-light-gold;
+   }
+  .input__submit{
+    min-width: 144px;
+    height: 80px;
+    background-color: $color-grey-dark;
+    color: $color-white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-family: 'Euclid Circular B', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.input__type-wrapper{
+  position: relative;
+}
+.input__type{
+  min-width: 328px;
+  height: 64px;
+  margin: 0 8px 0 8px;
+}
+
+input[value] {
+  font-family: 'Euclid Circular B', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.input__type-wrapper:after{
+  content: '';
+  position: absolute;
+  background-image: url("../components/ChoiceHoliday/img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 10px;
+  height: 5px;
+  top: 30px;
+  right: 25px;
+}
+
+.input__date{
+  min-width: 264px;
+  height: 64px;
+  margin-right: 8px;
+}
+.input__date-wrapper{
+  position: relative;
+}
+.input__date-wrapper:after{
+  content: '';
+  position: absolute;
+  background-image: url("../components/ChoiceHoliday/img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 23px;
+  height: 22px;
+  top: 25px;
+  right: 20px;
+}
+
+.input__persons{
+  min-width: 392px;
+  height: 64px;
+  margin-right: 8px;
+}
+.input__person-wrapper{
+  position: relative;
+}
+.input__person-wrapper:after{
+  content: '';
+  position: absolute;
+  background-image: url("../components/ChoiceHoliday/img/person.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 23px;
+  height: 22px;
+  top: 25px;
+  right: 20px;
+}
+
+.choice-holiday__content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p{
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'SangBleu Kingdom';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+    text-align: center;
+  }
+  Button{
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+}
+  .choice-holiday__content:before{
+    content: '';
+    position: absolute;
+    background-image: url("../components/ChoiceHoliday/img/111.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 365px;
+    height: 880px;
+    top: -140px;
+    left: 0;
+    z-index: -1;
+  }
+.choice-holiday__content:after{
+  content: '';
+  position: absolute;
+  background-image: url("../components/ChoiceHoliday/img/222.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 480px;
+  height: 880px;
+  top: 130px;
+  right: 0;
+  z-index: -1;
+}
+
+.choice-holiday__content-title{
+  position: relative;
+  margin: 200px 0 124px 0;
+  font-family: 'SangBleu Kingdom';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 56px;
+  color: $color-grey-dark;
+  span{
+    font-weight: 300;
+  }
+}
+
+.choice-holiday__content-title:before{
+  content: '';
+  position: absolute;
+  background-image: url("../components/ChoiceHoliday/img/waves.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 146px;
+  height: 8px;
+  top: -85px;
+  left: 650px;
+}
+.choice-holiday__content-title:after{
+  content: '';
+  position: absolute;
+  background-image: url("../components/ChoiceHoliday/img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 62px;
+  height: 40px;
+  top: 150px;
+  left: 690px;
+}
+
+@media (max-width: 1440px) {
+  .choice-holiday__wrapper{
+    margin: 35px 0 96px 0;
+  }
+  .choice-holiday__form-container{
+    margin: 0 0 0 16px;
+  }
+  .choice-holiday__title{
+    font-family: 'SangBleu Kingdom';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 56px;
+    color: $color-grey-dark;
+    text-align: left;
+  }
+  .choice-holiday__form{
+    max-width: 328px;
+    height: 312px;
+    margin-top: 21px;
+    background-color: $color-light;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .input__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-left: 8px;
+      width: 100%;
+    }
+    input{
+      border: 1px solid $color-borders;  padding-left: 10px;
+      cursor: pointer;
+      width: 312px;
+      height: 64px;
+    }
+    input:focus{
+      border: 1px solid $color-light-gold;
+    }
+    .input__submit{
+      height: 64px;
+      min-width: 312px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Euclid Circular B', sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 32px;
+      padding: 0;
+    }
+  }
+
+  .input__type-wrapper{
+    position: relative;
+  }
+  .input__type{
+    min-width: 312px;
+    margin: 0;
+    padding: 0;
+  }
+  .input__type-wrapper:after{
+    content: '';
+    position: absolute;
+    background-image: url("../components/ChoiceHoliday/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 10px;
+    height: 5px;
+    top: 30px;
+    right: 25px;
+  }
+
+  .input__date{
+    min-width: 312px;
+    padding: 0;
+  }
+  .input__date-wrapper{
+    position: relative;
+  }
+  .input__date-wrapper:after{
+    content: '';
+    position: absolute;
+    background-image: url("../components/ChoiceHoliday/img/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 23px;
+    height: 22px;
+    top: 25px;
+    right: 20px;
+  }
+
+  .input__persons{
+    width: 312px;
+    min-width: 312px;
+    padding: 0;
+  }
+  .input__person-wrapper{
+    position: relative;
+  }
+  .input__person-wrapper:after{
+    content: '';
+    position: absolute;
+    background-image: url("../components/ChoiceHoliday/img/person.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 23px;
+    height: 22px;
+    top: 25px;
+    right: 20px;
+  }
+
+  .choice-holiday__content{
+    position: relative;
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    justify-content: center;
+    p{
+      width: 328px;
+      display: block;
+      margin: 0 auto;
+      font-family: 'SangBleu Kingdom';
+      font-weight: 700;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 32px;
+      color: $color-grey-dark;
+      text-align: center;
+    }
+    Button{
+      margin: 0 auto;
+      margin-top: 32px;
+    }
+  }
+
+  .choice-holiday__content:after{
+    content: '';
+    position: absolute;
+    background-image: url("../components/ChoiceHoliday/img/360/222.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 213px;
+    height: 345px;
+    top: 450px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .choice-holiday__content-title{
+    position: relative;
+    margin: 143px 0 75px 0;
+    font-family: 'SangBleu Kingdom';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-grey-dark;
+    span{
+      font-weight: 300;
+    }
+  }
+
+  .choice-holiday__content-title:before{
+    content: '';
+    position: absolute;
+    background-image: url("../components/ChoiceHoliday/img/waves.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 146px;
+    height: 8px;
+    top: -85px;
+    left: 120px;
+  }
+  .choice-holiday__content-title:after{
+    content: '';
+    position: absolute;
+    background-image: url("../components/ChoiceHoliday/img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    width: 37px;
+    height: 24px;
+    top: 100px;
+    left: 150px;
+  }
+}
